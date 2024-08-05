@@ -43,5 +43,8 @@ public class EmployeeService {
                 addressRepository.save
                         (address);
     }
+    public void deleteAddressById(Long id){
+        addressRepository.deleteById(id);
+    }
 
 }
