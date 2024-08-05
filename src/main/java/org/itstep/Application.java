@@ -22,6 +22,9 @@ public class Application implements CommandLineRunner {
         employeeService.getEmployees().forEach(System.out::println);
 
         employeeService.deleteEmployeeById(1L);
+        employeeService.getAddresses().forEach(System.out::println);
+        employeeService.deleteEmployeeById(3L);
+        employeeService.getAddresses().forEach(System.out::println);
 
     }
 }
